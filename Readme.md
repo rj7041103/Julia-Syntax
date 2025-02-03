@@ -40,7 +40,8 @@ println("Hola, $nombre. Tienes $edad años.")
 @printf("Temperatura: %.2f°C\n", temperatura)  # Salida: Temperatura: 36.50°C
 ```
 
-##Operadores Aritméticos y Lógicos
+## Operadores Aritméticos y Lógicos
+
 **Concepto**
 Son aquellas operaciones que vienen integradas en el lenguaje para hacer operaciones básicas como la suma, resta, multiplicación y división, exponenciación , resto, entre otras y además nos ayudan también a la hora de evaluar condiciones que son determinantes para obtener resultados de comparaciones de 1 o más condiciones en cadena y estas son usadas en las estructuras condicionales.
 
@@ -59,7 +60,8 @@ or_logico = true || false   # OR lógico
 not_logico = !true
 ```
 
-##Variables y Tipos de Datos
+## Variables y Tipos de Datos
+
 **Concepto de Variable**  
 Mecanismo para almacenar y manipular datos. Julia usa asignación dinámica con tipado fuerte pero flexible, permitiendo reutilizar nombres de variables con distintos tipos (aunque no recomendado para optimización).
 **Concepto de Tipo de Dato**  
@@ -75,7 +77,8 @@ caracter = 'J'           # Char
 println("Tipo de x: ", typeof(x))  # Salida: Tipo de x: Int64
 ```
 
-#Estructuras de Control
+## Estructuras de Control
+
 **Concepto:**  
 Flujos de ejecución condicionales e iterativos que permiten implementar lógica compleja mediante bifurcaciones y repeticiones.
 
@@ -97,7 +100,8 @@ end
 
 ```
 
-#Funciones
+## Funciones
+
 **Concepto:**  
 Bloques reusables de código con despacho múltiple, donde la versión específica a ejecutar se selecciona basada en los tipos de los argumentos.
 
@@ -114,7 +118,8 @@ println(suma(5))      # 5
 
 ```
 
-#Estructuras de Datos
+## Estructuras de Datos
+
 **Concepto:**  
 Estructuras multidimensionales para almacenamiento eficiente de datos numéricos, con sintaxis unificada para álgebra lineal y operaciones elemento a elemento.
 Visto desde otro punto es una forma de organizar y almacenar datos como listas (arrays), pares clave-valor (diccionarios) o colecciones inmutables (tuplas).
@@ -130,7 +135,8 @@ println(estudiante["nombre"])  # Luisa
 
 ```
 
-#Manejo de Archivos
+## Manejo de Archivos
+
 **Concepto:**  
 Protocolos para comunicación con dispositivos externos y persistencia de datos, implementando buffers y acceso concurrente seguro.
 Son de las mejores Operaciones para leer y escribir datos en archivos externos, esencial para trabajar con datasets o guardar resultados.
@@ -150,7 +156,8 @@ println(contenido)  # Hola, Julia
 
 ```
 
-#Bucles y Comprensiones
+## Bucles y Comprensiones
+
 Concepto: Técnicas para crear colecciones (como arrays) de forma compacta o iterar sobre elementos con lógica embebida.
 Descripción: Comprensiones de colecciones para crear arrays de forma concisa.
 
@@ -158,7 +165,8 @@ Descripción: Comprensiones de colecciones para crear arrays de forma concisa.
 cuadrados = [i^2 for i in 1:5]  # [1, 4, 9, 16, 25]
 ```
 
-#Manejo de Errores
+## Manejo de Errores
+
 Concepto: Mecanismos para detectar y gestionar fallos en tiempo de ejecución, evitando que el programa se detenga abruptamente.
 Descripción: Uso de try-catch para manejar excepciones.
 
@@ -172,7 +180,8 @@ end
 
 ```
 
-#Paquetes y Módulos
+## Paquetes y Módulos
+
 Concepto: Conjuntos de código organizado que amplían las funcionalidades base de Julia, como herramientas para álgebra lineal o visualización.
 Descripción: Instalación y uso de paquetes con ] add NombrePaquete.
 
@@ -190,18 +199,18 @@ println(det(A))  # -2.0
 **Tipos especiales:**  
 `NaN`, `Inf` (para operaciones no numéricas) [3]
 
-## Manipulación de Strings
+# Manipulación de Strings
 
 **Concepto:**  
 Herramientas para creación, interpolación y procesamiento de cadenas de texto, incluyendo operaciones vectorizadas y formatos personalizados.
 
-#Interpolación y operaciones
+## Interpolación y operaciones
 
 ```julia
 saludo = "Hola $nombre, tienes $(edad+1) años próximamente."
 ```
 
-#Concatenación
+## Concatenación
 
 ```julia
 str1 = "Julia es " * "potente" * " para cálculos." # Usar * en vez de +
