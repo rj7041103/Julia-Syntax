@@ -291,7 +291,7 @@ http://localhost:8000/saludo/Maria
 Cuerpo de la petición a manera de prueba con la url: http://localhost:8000/items/
 
 ```json
-{ "item": "Laptop", "precio": 999.99 }
+{ "nombre": "Laptop", "precio": 999.99 }
 ```
 
 ## Documentación
