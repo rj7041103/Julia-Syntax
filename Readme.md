@@ -2,7 +2,7 @@
 
 ¡Bienvenidos! Este repositorio contiene los conceptos esenciales de Julia explicados de manera sencilla, con ejemplos prácticos y un enfoque en aplicaciones numéricas. Cada sección incluye una descripción detallada y código ejecutable.
 
-## Tabla de Contenidos
+## Tabla de Contenidos de Julia
 
 1. [Formateo de Salida por Consola](#formateo-de-salida-por-consola)
 2. [Operadores Aritméticos y Lógicos](#operadores-aritméticos-y-lógicos)
@@ -18,6 +18,12 @@
 12. [Tipos especiales](tipos-especiales)
 13. [Interpolación Básica](#interpolación-básica)
 14. [Concatenación](#concatenación)
+
+---
+
+## Api de Python desde 0
+
+[¿Cómo levantar una api de python desde 0?](¿Cómo-levantar-una-api-de-python-desde-0?)
 
 ---
 
@@ -215,3 +221,80 @@ saludo = "Hola $nombre, tienes $(edad+1) años próximamente."
 ```julia
 str1 = "Julia es " * "potente" * " para cálculos." # Usar * en vez de +
 ```
+
+# Creación de una API en Python desde 0 🐍🚀
+
+Guía práctica para implementar una API REST usando FastAPI (framework moderno y de alto rendimiento)
+
+## Requisitos Previos
+
+- Python 3.8+
+- Terminal/CMD
+- Editor de código (VS Code, PyCharm, etc.)
+
+## ¿Cómo levantar una api de python desde 0?
+
+### Paso 1: Configuración del entorno
+
+Creación de ambiente virtual y gestión de dependencias, en donde dice mi_api_env se debe cambiar por el nombre que se quiera poner
+
+```bash
+python -m venv mi_api_env
+```
+
+Una vez que aparezca la carpeta con el nombre mi_api_env o el nombre escogido se debe activar con el siguiente conmando en la terminal de windows (powershell)
+
+```powershell
+./mi_api_env/Scripts/activate
+```
+
+### Paso 2. Instalar Dependencias
+
+**Objetivo:** Configurar el entorno con las librerías necesarias.  
+Ejecuta en tu terminal:
+
+```bash
+pip install fastapi uvicorn
+```
+
+### Paso 3. Creación de un Archivo principal
+
+En tu directorio de proyecto dentro de tu editor de código crea un archivo main.py o api.py para poder empezar a escribir el codigo de la api
+
+### Paso 4. Creación de un Archivo principal
+
+Para correr este codigo se debe escribir en la terminal el siguiente comando:
+
+```bash
+uvicorn main:app --reload
+
+```
+
+### Paso 5. Probar el mensaje de la api llendo al navegador a Postman o usar la extensión de Thunder Client
+
+http://localhost:8000/
+
+**Salida esperada**
+
+```json
+{ "message": "¡Hola, API funcionando!" }
+```
+
+**Salida esperada del segundo Endpoint**
+http://localhost:8000/saludo/Maria
+
+```json
+{ "mensaje": "¡Hola, Maria!" }
+```
+
+**Salida esperada del tercer Endpoint**
+Cuerpo de la petición a manera de prueba con la url: http://localhost:8000/items/
+
+```json
+{ "item": "Laptop", "precio": 999.99 }
+```
+
+## Documentación
+
+Para ver mejora las rutas de los endpoints se puede consultar la siguiente url:
+http://localhost:8000/docs
