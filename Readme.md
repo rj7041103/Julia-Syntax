@@ -15,7 +15,7 @@
 9. [Manejo de Errores](#manejo-de-errores)
 10. [Paquetes y Módulos](#paquetes-y-módulos)
 11. [Mejores Prácticas](#mejores-prácticas)
-12. [Tipos especiales](tipos-especiales)
+12. [Tipos especiales](#tipos-especiales)
 13. [Interpolación Básica](#interpolación-básica)
 14. [Concatenación](#concatenación)
 
@@ -23,7 +23,7 @@
 
 ## Api de Python desde 0
 
-[¿Cómo levantar una api de python desde 0?](¿Cómo-levantar-una-api-de-python-desde-0?)
+[¿Cómo levantar una api de python desde 0?](#¿Cómo-levantar-una-api-de-python-desde-0?)
 
 ---
 
@@ -232,7 +232,7 @@ Guía práctica para implementar una API REST usando FastAPI (framework moderno 
 - Terminal/CMD
 - Editor de código (VS Code, PyCharm, etc.)
 
-## ¿Cómo levantar una api de python desde 0?
+# ¿Cómo levantar una api de python desde 0?
 
 ### Paso 1: Configuración del entorno
 
